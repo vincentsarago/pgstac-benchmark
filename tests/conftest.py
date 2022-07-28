@@ -57,6 +57,5 @@ def database_url(test_db):
 @pytest.fixture(autouse=True)
 def conn(database_url):
     """Create app with connection to the pytest database."""
-
     with psycopg.connect(str(database_url)) as connection:
         yield connection

@@ -8,4 +8,4 @@ psycopg
 psycopg-pool
 psycopg2
 
-pypgstac==0.6.4
+pypgstac==0.6.3

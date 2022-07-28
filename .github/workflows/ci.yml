@@ -35,7 +35,7 @@ jobs:
           python -m pip install -r requirement.txt
 
       - name: Run Tests
-        run: python -m pytest
+        run: python -m pytest -s -vv
 
       # - name: Run Benchmark
       #   run: python -m pytest --benchmark-only --benchmark-columns 'min, max, mean, median' --benchmark-json output.json
