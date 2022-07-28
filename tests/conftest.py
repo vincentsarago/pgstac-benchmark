@@ -46,7 +46,7 @@ def database_url(test_db):
 
             cur.execute("SELECT COUNT(*) FROM pgstac.items")
             val = cur.fetchone()[0]
-            assert val == 8
+            assert val == 3200
 
     return test_db.connection.engine.url
 
