@@ -23,9 +23,6 @@ def database_url(test_db):
     because pytest-asyncio event loop is a function scoped fixture and cannot be called within the current scope.  Yields
     a database url which we pass to our application through a monkeypatched environment variable.
     """
-    assert test_db.install_extension("postgis")
-
-    # Run PgSTAC Migration
     print("Connecting to DB...")
     with PgstacDB(dsn=str(test_db.connection.engine.url)) as db:
         print("Running to PgSTAC migration...")
@@ -54,7 +51,7 @@ def database_url(test_db):
     return test_db.connection.engine.url
 
 
-@pytest.fixture(autouse=True)
+@pytest.fixture(scope="session")
 def conn(database_url):
     """Create app with connection to the pytest database."""
     with psycopg.connect(str(database_url)) as connection:
