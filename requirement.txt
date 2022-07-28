@@ -1,0 +1,10 @@
+
+pytest
+pytest-cov
+pytest-benchmark
+pytest-pgsql
+
+psycopg
+psycopg2
+
+pypgstac==0.6.4

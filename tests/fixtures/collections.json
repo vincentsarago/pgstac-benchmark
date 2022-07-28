@@ -1,0 +1,1 @@
+{"type":"Collection","id":"landcover","stac_version":"1.0.0","description":"Land Cover","links":[],"stac_extensions":[],"title":"Land Cover","extent":{"spatial":{"bbox":[[-93,12,42,57]]},"temporal":{"interval":[["2021-01-01T00:00:00Z","2021-01-01T00:00:00Z"]]}},"license":"proprietary"}
