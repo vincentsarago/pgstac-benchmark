@@ -9,11 +9,11 @@ on:
     - '*'
   pull_request:
 env:
-  LATEST_PY_VERSION: '3.9'
+  LATEST_PY_VERSION: '3.11'
 
 jobs:
   benchmark:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python
