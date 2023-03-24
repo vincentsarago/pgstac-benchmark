@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678213959968,
+  "lastUpdate": 1679700419807,
   "repoUrl": "https://github.com/vincentsarago/pgstac-benchmark",
   "entries": {
     "PgSTAC Benchmarks": [
@@ -177,6 +177,65 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.01950284898147097",
             "extra": "mean: 300.2776296000093 msec\nrounds: 5"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "vincent.sarago@gmail.com",
+            "name": "vincentsarago",
+            "username": "vincentsarago"
+          },
+          "committer": {
+            "email": "vincent.sarago@gmail.com",
+            "name": "vincentsarago",
+            "username": "vincentsarago"
+          },
+          "distinct": true,
+          "id": "2375006bffabf2a9efb2058ffb9bf295ef4e834d",
+          "message": "0.7.2",
+          "timestamp": "2023-03-25T00:25:38+01:00",
+          "tree_id": "5d48c6b98e20f83b343d2b52fa4798ca0b24576a",
+          "url": "https://github.com/vincentsarago/pgstac-benchmark/commit/2375006bffabf2a9efb2058ffb9bf295ef4e834d"
+        },
+        "date": 1679700419415,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/benchmarks.py::test_benchmark_search_limit[1]",
+            "value": 181.36527594387178,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00041895059846884167",
+            "extra": "mean: 5.513734615381812 msec\nrounds: 39"
+          },
+          {
+            "name": "tests/benchmarks.py::test_benchmark_search_limit[10]",
+            "value": 54.26179802756104,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0004963727026421498",
+            "extra": "mean: 18.429171836364006 msec\nrounds: 55"
+          },
+          {
+            "name": "tests/benchmarks.py::test_benchmark_search_limit[50]",
+            "value": 12.650338791350277,
+            "unit": "iter/sec",
+            "range": "stddev: 0.009638476364285687",
+            "extra": "mean: 79.04926630769401 msec\nrounds: 13"
+          },
+          {
+            "name": "tests/benchmarks.py::test_benchmark_search_limit[100]",
+            "value": 6.666046400571846,
+            "unit": "iter/sec",
+            "range": "stddev: 0.01344145069419845",
+            "extra": "mean: 150.01395728571813 msec\nrounds: 7"
+          },
+          {
+            "name": "tests/benchmarks.py::test_benchmark_search_limit[200]",
+            "value": 3.3996224005405273,
+            "unit": "iter/sec",
+            "range": "stddev: 0.016832192023029397",
+            "extra": "mean: 294.15031499998463 msec\nrounds: 5"
           }
         ]
       }
